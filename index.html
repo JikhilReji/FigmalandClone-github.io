@@ -1,0 +1,563 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+
+
+<!--=======================================vedio=======================-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+		<title>Figma_Landing_page_prototype_1</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<!----- webfonts ------>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic|Open+Sans:300italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+		<!----- webfonts ------>
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+<!--===============================Css for input box===============-->
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body
+{
+  background-color: #fcfcfc;
+}
+.block
+{
+  margin: 0 auto;
+  max-width: 200px;
+  padding: 30px 30px;   
+}
+.input-res
+{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font: 15px/1 'Open Sans', sans-serif;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  max-width: 500px;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 10px 11px 11px 11px;
+  border-radius: 30px;
+  box-shadow: none;
+  outline: none;
+  margin: 0;
+  box-sizing: border-box; 
+}
+<!--========================Text align=============-->
+.section {
+    padding-left:100px;
+}
+.heading{
+    text-align:left;
+    margin-left:130px;
+    float:left;
+    width:350px;
+}
+h4 {
+    font-weight:bold;
+}
+
+</style>
+	</head>
+	<body>
+		<div class="main-header">
+
+
+		<!----- start-header---->
+	<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+
+						<!----start-top-nav---->
+						<nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">Home </a></li>
+								<li><a href="#about" class="scroll">Product</a></li>
+								<li><a href="#services" class="scroll">Pricing</a></li>
+								<li><a href="#portfolio" class="scroll">About</a></li>
+						
+						<li><a href="#" class="scroll">Contact</a></li>
+						<li style="padding-right:8em"><img src="images/logo.png" alt="Not found the image" width="200px"></li>
+
+						<li><a href="#">
+<img src="images/Vector_2.png" alt="Not found the image" width="30px">
+</a></li>
+
+						<li><a href="#">
+<img src="images/Vector_1.png" alt="Not found the image" width="30px">
+</a></li>
+
+						<li><a href="#">
+<img src="images/Vector.png" alt="Not found the image" width="30px">
+</a></li>
+							</ul>
+
+							<a href="#" id="pull"><img src="images/menu-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+		<!----- //End-header---->
+		<!----start-slider-script---->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			<div class="tittle-head">							
+			        		<h1>The best products start with Figma</h1>
+			          		<p>Most calendars are designed for teams.
+ 						Slate is designed for Freelancers.</p>
+			          		<a href="#fakeLink" class="btn blue circular">Try For Free</a>
+						
+			          	</div>
+			     
+			 
+			        
+			 
+			    </div> 
+			    <div class="clearfix"> </div>
+			    </div>
+			<!----- //End-slider---->
+			<div id="about" class="Features">
+				<div class="container">
+					<div class="about-head">
+						<h3>Features</h3>
+						
+						<p>Most calendars are designed for teams.<br>
+ 						Slate is designed for Freelancers</p>
+					</div>
+				</div>
+				
+			</div>
+			<!----- //End-Features---->
+
+
+
+
+
+			<div id="services" class="services">
+       		<div class="container">
+
+       		  <!-- <div class="gallery-head text-center">
+				  <h3>Services</h3>
+				  <p>What we do?.</p>
+			    </div>-->
+
+       			<div class="row text-center feature">
+       				<div class="col-md-4 service_grid">
+       					<i class="icon1"> </i>
+       					<h3>OpenType features Variable fonts</h3>
+       					<p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
+       				</div>
+
+       				<div class="col-md-4 service_grid">
+       				<i class="icon2"> </i>
+       					<h3>Design with real data</h3>
+       					<p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
+       				</div>
+       				<div class="col-md-4 service_grid">
+       					<i class="icon3"> </i>
+       					<h3>Fastest way to take action</h3>
+       					<p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
+       				</div>
+       			</div>
+       		</div>
+       	</div>
+	 <!---//End-services----->
+
+
+
+
+
+
+
+
+ 	<div id="video" class="vedio-content">
+ 		<div class="container">
+ 			
+			 	<div id="vedios">
+<div class="video-responsive">
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/Cx2dkpBxst8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>					
+				</div>
+		 </div>
+	 </div>
+	 	  <!---//End-video----->
+	 	   
+
+	 	 <div id="team" class="team">
+	 	 	<div class="container">
+<!--<div style="overflow-x:auto;">-->	 	 		
+
+<table> 
+<th>
+<h1>Fastest way to organize</h1>
+<h3>Most calendars are designed for teams.<br> 
+	State is designed for freelancers</h3>
+<a href="#" class="btn blue circular">Try For Free</a>
+
+</th>
+<th><img src="images/Desktop - 2.jpg" alt="Not found image" class="responsive02" width="600" height="400"></th>
+
+</table>
+</div>
+
+
+
+<table> 
+<th><img src="images/person.png" alt="Not found image" class="responsive01" width="600" height="400">
+</th>
+<th>
+<h4><b>At your fingertips</b></h4>
+<h1><b>Lightning fast prototyping</b></h1>
+<br>
+<br>
+<h4><b>Subscribe to our Newsletter</b></h4>
+<h4>Available exclusivery on Figmaland</h4>
+<br>
+<div class="input-group">
+<input type="text" class="input-res" value="E-mail" onfocus="this.value = '';" onblur="if (this.value ='E-mail') {this.value = 'E-mail';}">
+<br><br>
+<a href="#" class="btn blue circular">Subscribe</a>
+</div>
+</th>
+</table>
+</div
+</div>
+		</div>
+	 	 </div>
+	 	 <!-------->
+<br>
+<center>
+<b><h1>Partners</h1></b>
+<h4>Most calendars are designed for teams. 
+<p>Slate is designed for freelancers</h4></p>
+<br><br>
+<img src="images/Desktop 3.jpg" alt="Not found image" class="responsive" width="600" height="400">
+<br><br>
+<a href="#" class="btn blue circular">Try For Free</a>
+<br><br>
+<br><br>
+<b><h1>Testimonials</h1></b>
+<br><br>
+<img src="images/Desktop4.jpg" alt="Not found image" class="responsive2" width="600" height="400">
+<br><br><br>
+<h4>Most calendars are designed for teams. 
+Slate is designed for freelancers
+<p>who want a simple way to plan their schedule.</h4></p><br><br>
+<img src="images/image_5.png" alt="Not found image" class="responsive3" width="600" height="400">
+<br><br><br>
+<a href="#" class="btn blue circular">More Testimonials</a>
+</center>
+<br><br><br>
+
+
+
+
+
+
+	 	  <div class="contact">
+	 	  	<div class="container">
+	 		<div class="contact-head">
+<!--=======================================================================================================================-->
+    <section id="pricing" class="pricing">
+        <div class="section-title">
+          <h2 style="color:white;">Pricing</h2>
+          <p style="color:white;">Most calendars are designed for teams.<br> 
+Slate is designed for freelancers</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="150">
+            <div class="box">
+              <h3>FREE</h3>
+<h5 style="color:black;">Organize across all<br>
+apps by hand</h5>
+              <h4>0<sup>$</sup><span style="color:black;"> / month</span></h4>
+              <ul>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in">
+            <div class="box featured">
+              <h3 style="color:white;">STANDARD</h3>
+<h5 style="color:white;">Organize across all<br>
+apps by hand</h5>
+              <h4 style="color:white;">10<sup>$</sup><span style="color:white;"> / month</span></h4>
+              <ul>
+                <li style="color:white;">Pricing Feature</li>
+                <li style="color:white;">Pricing Feature</li>
+                <li style="color:white;">Pricing Feature</li>
+                <li style="color:white;">Pricing Feature</li>
+                <li style="color:white;">Pricing Feature</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+            <div class="box">
+              <h3>BUSINESS</h3>
+<h5 style="color:black;">Organize across all<br>
+apps by hand</h5>
+              <h4>99<sup>$</sup><span style="color:black;"> / month</span></h4>
+              <ul>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+<!--=======================================================================================================================-->		 		
+
+
+
+
+
+			 </div>
+			</div>
+	 	  </div>
+	
+	 	   <div id="contact" class="feedback">
+	 	   		<div class="container">
+	 	   			
+	 	 			<center><h1>Contact Us</h1>
+ 					<h4>Most calendars are designed for teams.</h4> 
+<p><h4>Slate is designed for freelancers</h4></p>
+<br><br>
+	 	 		</center>
+
+ 	 	
+	<div class="feed-contact">
+<div class="section">
+    
+        <h4 class="heading">Contact Us</h4>
+</div>
+				 	 			<div class="col-md-8 contact-form">
+
+
+<input type="text" class="input-res" value="Name" onfocus="this.value = '';" onblur="if (this.value = 'Name') {this.value = 'Name';}">
+<br>
+<input type="text" class="input-res" value="E-mail" onfocus="this.value = '';" onblur="if (this.value ='E-mail') {this.value = 'E-mail';}">
+<br>
+<textarea value="Message" class="input-res" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+<br>
+<a href="#" class="btn blue circular">Send</a>
+<!--<input type="submit" class="btn blue circular" value="Send a message" >-->
+</form>
+
+<br>								</div>
+								<div class="col-md-4 address">
+										
+							<img src="images/Desktop_6.png" alt="Not found image" class="responsive4">
+								<br><br>
+								
+								<a href="#"><img src="images/Vector_8.png" alt="Not found image" width="40" height="40"></a>
+								&nbsp;&nbsp;&nbsp
+								&nbsp;&nbsp;&nbsp
+
+								<a href="#"><img src="images/Vector_7.png" alt="Not found image" width="40" height="40"></a>
+ 								&nbsp;&nbsp;&nbsp
+								&nbsp;&nbsp;&nbsp
+								<a href="#"><img src="images/Vector_6.png" alt="Not found image" width="40" height="40"></a>
+								</div>
+								<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+<br><br>
+<br>
+<!--===========================================================footer=========================================================-->
+<!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Pages</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Pricing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Tomothy</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Eleanor Edwards</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Ted Robertson</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Annette Russell</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Jennie Mckinney</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Gloria Richards</a></li>
+            </ul>
+          </div>
+
+<div class="col-lg-2 col-md-6 footer-links">
+            <h4>Jane Black</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Philip Jones</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Colleen Russel</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marvin Hawkins</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Bruce Simmons</a></li>
+            </ul>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+
+
+
+<table>
+<th><img src="images/Vector_4.png" alt="Not found the image" width="30px"/></th>
+<th><h4>7480 Mockingbird Hill undefined</h4></th>
+     <tr>
+<td><img src="images/Vector_3.png" alt="Not found the image" width="30px"/></td>      
+<td><h4>(239) 555-0108</h4></td>
+</tr>
+
+<tr>
+<td><a href="#">
+<img src="images/Vector_2.png" alt="Not found the image" width="30px">
+</a></td>
+<td><a href="#">
+<img src="images/Vector_1.png" alt="Not found the image" width="30px">
+</a>
+&nbsp;&nbsp;&nbsp
+&nbsp;&nbsp;&nbsp
+<a href="#">
+<img src="images/Vector.png" alt="Not found the image" width="30px">
+</a>
+</td>
+</tr>
+</table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+   
+  </footer>
+<!-- End Footer -->
+
+
+
+<!--================================================JS===================================================================================-->
+				<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</body>
+</html>
